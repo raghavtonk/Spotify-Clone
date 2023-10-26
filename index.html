@@ -5,149 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <style>
-        #nav_2{
-            margin-top: 50px;
-        }
-        #nav_1{
-            padding-top: 25px;
-        }
-        #home_navbar{
-            background: #000;
-            width: 371.801px;
-            height: 982px;
-            flex-shrink: 0;
-        }
-        #nav_list li {
-            list-style-type: none;
-            padding: 15px;
-        }
-        
-        #spotify_logo{
-            background: url(<path-to-image>), rgb(16, 16, 16) 50% / cover no-repeat;
-            width: 202.576px;
-            height: 60.526px;
-            flex-shrink: 0;
-        }
-        .nav_images{
-            width: 29.645px ;
-            height: 32.116px;
-            flex-shrink: 0;
-        }
-        .nav_text{
-            padding-left: 25px;
-            color: #FFF;
-            font-family: DM Sans;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -1.14px;
-            width: 72.878px;
-            height: 30.881px;
-            flex-shrink: 0;
-        }
-        #nav_3{
-            padding-left: 27px;
-            color: #FFF;
-            font-family: DM Sans;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -1.14px;
-            width: 213.693px;
-            height: 30.881px;
-            flex-shrink: 0;
-            line-height: 40px;
-            list-style-type: none;
-        }
-        
-    </style> -->
   </head>
   <body>
-    <a href="playlist.html">playlist page</a>
-    <nav id="home_navbar">
-      <div id="nav_1">
-        <ul id="nav_list">
-          <li>
-            <img
-              src="https://s3-alpha-sig.figma.com/img/b2ca/5d63/d322953dba109cbc3a2430fbd4dbe803?Expires=1698019200&Signature=FGDmgDg6EOJHep3GEAqEONKA05mjQBbWclIt7DFAVYt-Jm41c2MsPW~uwj0IAc86EI3cN-Vr87mqNxZRvrxScdx3jzJ9YKzb7P3cz5aZ0KPfeM~rsPXQZI1zNltiBHuLkGcapM2HmIH8AidvnjgPiM~bv~4hyYAUa7I-OlrUxixbyozisDyiBmGYDe~rKBrXww14vToUGUh2bHvMJzKysRyqFBjHxkq~dkZK5CAGlz~polsHKKvXutiN0kgNm6z1VibstGyNh2cgHR7n3QUW-sP2W9WL1kBCtWvGD66pRtrRUEpNhscFYVMCx2lzLEktUA4HsEXm4MyGBdLlEG84WA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-              id="spotify_logo"
-            />
-          </li>
+    <div id="main_page">
+      <nav id="home_navbar">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/b2ca/5d63/d322953dba109cbc3a2430fbd4dbe803?Expires=1698019200&Signature=FGDmgDg6EOJHep3GEAqEONKA05mjQBbWclIt7DFAVYt-Jm41c2MsPW~uwj0IAc86EI3cN-Vr87mqNxZRvrxScdx3jzJ9YKzb7P3cz5aZ0KPfeM~rsPXQZI1zNltiBHuLkGcapM2HmIH8AidvnjgPiM~bv~4hyYAUa7I-OlrUxixbyozisDyiBmGYDe~rKBrXww14vToUGUh2bHvMJzKysRyqFBjHxkq~dkZK5CAGlz~polsHKKvXutiN0kgNm6z1VibstGyNh2cgHR7n3QUW-sP2W9WL1kBCtWvGD66pRtrRUEpNhscFYVMCx2lzLEktUA4HsEXm4MyGBdLlEG84WA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          id="spotify_logo"
+        />
+        <ul class="nav_list">
           <li>
             <img src="share_img/fi-ss-home.png" class="nav_images" />
-            <strong class="nav_text">Home</strong>
+            <a href="#" class="nav_text">Home</a>
           </li>
           <li>
-            <img
-              src="share_img/fi-rs-search.png"
-              class="nav_images"
-              alt=""
-            /><strong class="nav_text">Search</strong>
+            <img src="share_img/fi-rs-search.png" class="nav_images" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Search</a
+            >
           </li>
           <li>
-            <img src="share_img/library.png" alt="" /><strong class="nav_text"
-              >Your Library</strong
+            <img src="share_img/library.png" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Your Library</a
             >
           </li>
         </ul>
-      </div>
-      <div class="nav_2">
-        <ul id="nav_list">
+
+        <ul class="nav_list">
           <li>
-            <img
-              src="share_img/fi-ss-plus-small.png"
-              alt="Home icon"
-              class="nav_images"
-              id="homeIcon"
-              style="
-                background: url(<path-to-image>), white 50% / cover no-repeat;
-              "
-            /><strong class="nav_text">Create Playlist</strong>
+            <img src="share_img/fi-ss-plus-small.svg" alt="" id="Create" /><a
+              href="#"
+              class="nav_text"
+              >Create Playlist</a
+            >
           </li>
           <li>
-            <img
-              src="share_img/fi-ss-heart.png"
-              alt=""
-              class="nav_images"
-              style="
-                width: 10.746px;
-                height: 10.746px;
-                flex-shrink: 0;
-                border-radius: 1px;
-                padding: 9px;
-                background: linear-gradient(
-                  135deg,
-                  #4000f4 0%,
-                  #603aed 22.48%,
-                  #7c6ee6 46.93%,
-                  #979fe1 65.71%,
-                  #a2b3de 77.68%,
-                  #adc8dc 88.93%,
-                  #c0ecd7 100%
-                );
-              "
-            /><strong class="nav_text">Liked Songs</strong>
+            <img src="share_img/heart nav.svg" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Liked Songs</a
+            >
           </li>
           <li>
-            <img
-              src="share_img/Group.png"
-              style="
-                width: 19.249px;
-                height: 16.43px;
-                flex-shrink: 0;
-                border-radius: 5px;
-                padding: 6px;
-                background: #004638;
-              "
-            /><strong class="nav_text">Your Episodes</strong>
+            <img src="share_img/Group.png" /><a href="#" class="nav_text"
+              >Your Episodes</a
+            >
           </li>
         </ul>
-      </div>
-      <div id="nav_3">
-        <ul id="nav_3">
+
+        <ul class="nav_list">
           <li>FAV</li>
           <li>Daily Mix 1</li>
           <li>Discover Weekly</li>
@@ -155,45 +64,126 @@
           <li>Dance / Electronix Mix</li>
           <li>EDM / Popular</li>
         </ul>
-      </div>
-    </nav>
-    <section>
-      <div id="main_page">
-        <div>Good morning</div>
-        <div>
-          <span><img src="share_img/fi-ss-heart.png" />Liked Songs</span>
-          <span
-            ><img src="share_img/netflix playlist.png" />Netflix Playlist</span
-          >
-          <span><img src="share_img/kda.png" />K/ DA</span>
-          <span
-            ><img src="share_img/dance electronic.png" alt="" />Dance /
-            Electronic Mix</span
-          >
+        <ul class="nav_list">
+          <li>
+            <button><img src="share_img/grommet-icons_install-option.svg" alt=""></button>
+            Install App
+          </li>
+        </ul>
+      </nav>
+      <section id="main_bar">
+        <div id="uperbutton">
+          <div>
+            <button class="button1">
+              <img src="share_img/fi-rr-angle-small-left.svg" alt="" />
+            </button>
+            <button class="button1">
+              <img src="share_img/fi-rr-angle-small-right.svg" alt="" />
+            </button>
+          </div>
+          <button class="button2">
+            <img src="share_img/Ellipse 3.svg" alt="" /> Angel
+            <img src="share_img/fi-ss-caret-down.svg" alt="" />
+          </button>
         </div>
         <div>
-          <h3>Shows you might like</h3>
+          <h2>Good morning</h2>
+          <div class="list">
+            <div class="card1">
+              <img src="share_img/heart nav.svg" />Liked Songs
+            </div>
+            <div class="card1">
+              <img src="share_img/netflix playlist.png" />Netflix Playlist
+            </div>
+            <div class="card1"><img src="share_img/kda.png" />K/ DA</div>
+            <div class="card1">
+              <img src="share_img/dance electronic.png" alt="" />Dance /
+              Electronic Mix
+            </div>
+          </div>
         </div>
         <div>
-          <span
-            ><img src="share_img/Weekly Motivatio....png" alt="" />Weekly
-            Motivatio... Ben Ina Scott
-          </span>
-          <span
-            ><img src="share_img/MEDITATION SELF.png" alt="" />MEDITATION SELF
-            Ibn Hussain Aleen
-          </span>
-          <span
-            ><img src="share_img/The Alexa Show.png" alt="" />The Alexa Show
-            Adriana Tom
-          </span>
+          <div class="mightlike">
+          <h2>Shows you might like</h2>
+          <p>SEE ALL</p>
+        </div>
+        <div class="list2">
+          <div class="card2"
+            ><img src="share_img/Weekly Motivatio....png" alt="" />
+            <strong class="st">Weekly
+              Motivatio...</strong>
+              <p class="ptag">Ben Ina Scott</p> 
+          </div>
+          <div class="card2"
+            ><img src="share_img/MEDITATION SELF.png" alt="" />
+            <strong class="st">MEDITATION SELF</strong>
+            <p class="ptag">Ibn Hussain Aleen</p>
+          </div>
+          <div class="card2"
+            ><img src="share_img/Words beyond act....png" alt="" />
+            <strong class="st">Words beyond act...</strong>
+            <p class="ptag">Samuel Scott</p>
+          </div>
+          <div class="card2">
+            <img src="share_img/The Alexa Show.svg" alt=""> 
+            <strong class="st">The Alexa Show</strong>
+            <p class="ptag">Adriana Tom</p>
+          </div>
+          <div class="card2">
+            <img src="share_img/The Alexa Show.svg" alt=""> 
+            <strong class="st">The Alexa Show</strong>
+            <p class="ptag">Adriana Tom</p>
+          </div>
+          <div class="card2">
+            <img src="share_img/The Alexa Show.svg" alt=""> 
+            <strong class="st">The Alexa Show</strong>
+            <p class="ptag">Adriana Tom</p>
+          </div>
+          <div class="card2">
+            <img src="share_img/The Alexa Show.svg" alt=""> 
+            <strong class="st">The Alexa Show</strong>
+            <p class="ptag">Adriana Tom</p>
+          </div>
+          <div class="card2">
+            <img src="share_img/The Alexa Show.svg" alt=""> 
+            <strong class="st">The Alexa Show</strong>
+            <p class="ptag">Adriana Tom</p>
+          </div>
+          
         </div>
       </div>
-    </section>
-    <footer>
-      <div id="audio">
-        <audio src="" controls style="width: 90vw"></audio>
-      </div>
-    </footer>
+      </section>
+      <footer id="player">
+        <div id="leftbar">
+          <img src="share_img/player 1.svg" alt="">
+          <div>
+          <strong>Dreaming On</strong>
+          <P>Dreaming On </P>
+        </div>
+          <img class="image"src="share_img/bx_bxs-heart.svg" alt="">
+        </div>
+        <div id="midbar">
+          <div>
+            <img src="share_img/raphael_shuffle.svg" alt="">
+            <img src="share_img/bx_bx-skip-previous.svg" alt="">
+            <img src="share_img/gridicons_play.svg" alt="">
+            <img src="share_img/bx_bx-skip-previous (1).svg" alt="">
+            <img src="share_img/Group.svg" alt="">
+            
+          </div>
+          <div class="playertime">
+          <div><p>2:11</p></div>
+          <div><img src="share_img/Rectangle 19.svg" alt=""></div>
+          <div><p>2:42</p></div>
+        </div>
+        </div>
+        <div id="rightbar">
+          <img src="share_img/ph_microphone-stage.svg" alt="">
+          <img src="share_img/carbon_query-queue.svg" alt="">
+          <img src="share_img/carbon_laptop.svg" alt="">
+          <img src="share_img/sound.svg" alt="">
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

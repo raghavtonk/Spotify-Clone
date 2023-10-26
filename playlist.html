@@ -7,93 +7,90 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="main_page2">
     <nav id="home_navbar">
-      <div id="nav_1">
-        <ul id="nav_list">
-          <li>
-            <img
-              src="https://s3-alpha-sig.figma.com/img/b2ca/5d63/d322953dba109cbc3a2430fbd4dbe803?Expires=1698019200&Signature=FGDmgDg6EOJHep3GEAqEONKA05mjQBbWclIt7DFAVYt-Jm41c2MsPW~uwj0IAc86EI3cN-Vr87mqNxZRvrxScdx3jzJ9YKzb7P3cz5aZ0KPfeM~rsPXQZI1zNltiBHuLkGcapM2HmIH8AidvnjgPiM~bv~4hyYAUa7I-OlrUxixbyozisDyiBmGYDe~rKBrXww14vToUGUh2bHvMJzKysRyqFBjHxkq~dkZK5CAGlz~polsHKKvXutiN0kgNm6z1VibstGyNh2cgHR7n3QUW-sP2W9WL1kBCtWvGD66pRtrRUEpNhscFYVMCx2lzLEktUA4HsEXm4MyGBdLlEG84WA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-              id="spotify_logo"
-            />
-          </li>
+      <div>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/b2ca/5d63/d322953dba109cbc3a2430fbd4dbe803?Expires=1698019200&Signature=FGDmgDg6EOJHep3GEAqEONKA05mjQBbWclIt7DFAVYt-Jm41c2MsPW~uwj0IAc86EI3cN-Vr87mqNxZRvrxScdx3jzJ9YKzb7P3cz5aZ0KPfeM~rsPXQZI1zNltiBHuLkGcapM2HmIH8AidvnjgPiM~bv~4hyYAUa7I-OlrUxixbyozisDyiBmGYDe~rKBrXww14vToUGUh2bHvMJzKysRyqFBjHxkq~dkZK5CAGlz~polsHKKvXutiN0kgNm6z1VibstGyNh2cgHR7n3QUW-sP2W9WL1kBCtWvGD66pRtrRUEpNhscFYVMCx2lzLEktUA4HsEXm4MyGBdLlEG84WA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          id="spotify_logo"
+        />
+        <ul class="nav_list">
           <li>
             <img src="share_img/fi-ss-home.png" class="nav_images" />
-            <strong class="nav_text">Home</strong>
+            <a href="#" class="nav_text">Home</a>
           </li>
           <li>
-            <img
-              src="share_img/fi-rs-search.png"
-              class="nav_images"
-              alt=""
-            /><strong class="nav_text">Search</strong>
+            <img src="share_img/fi-rs-search.png" class="nav_images" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Search</a
+            >
           </li>
           <li>
-            <img src="share_img/library.png" alt="" /><strong class="nav_text"
-              >Your Library</strong
+            <img src="share_img/library.png" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Your Library</a
+            >
+          </li>
+        </ul>
+
+        <ul class="nav_list">
+          <li>Playlists</li>
+          <li>
+            <img src="share_img/fi-ss-plus-small.svg" alt="" id="Create" /><a
+              href="#"
+              class="nav_text"
+              >Create Playlist</a
+            >
+          </li>
+          <li>
+            <img src="share_img/heart nav.svg" alt="" /><a
+              href="#"
+              class="nav_text"
+              >Liked Songs</a
             >
           </li>
         </ul>
       </div>
       <div>
-        <p id="playlist_css">Playlists</p>
-        <ul id="nav_list">
-          <li>
-            <img
-              src="share_img/fi-ss-plus-small.png"
-              alt="Home icon"
-              class="nav_images"
-              id="homeIcon"
-              style="
-                background: url(<path-to-image>), white 50% / cover no-repeat;
-              "
-            /><strong class="nav_text">Create Playlist</strong>
-          </li>
-          <li>
-            <img
-              src="share_img/fi-ss-heart.png"
-              alt=""
-              class="nav_images"
-              style="
-                width: 10.746px;
-                height: 10.746px;
-                flex-shrink: 0;
-                border-radius: 1px;
-                padding: 9px;
-                background: linear-gradient(
-                  135deg,
-                  #4000f4 0%,
-                  #603aed 22.48%,
-                  #7c6ee6 46.93%,
-                  #979fe1 65.71%,
-                  #a2b3de 77.68%,
-                  #adc8dc 88.93%,
-                  #c0ecd7 100%
-                );
-              "
-            /><strong class="nav_text">Liked Songs</strong>
-          </li>
-        </ul>
+        <img id="album_img"src="share_img/album art.svg" alt="">
       </div>
     </nav>
-    <section>
-      <div id="playlist_mainpage">
-        <div id="playlist_top">
-          <span><img src="share_img/playlist.png" alt="" /></span>
-          <span id="playlist_tag">PLAYLIST</span>
-          <span id="playlist_name">Pop Right Now</span><br />
-          <span
-            ><img src="share_img/thumb_play.png" alt="" />
-            <img src="share_img/heart.svg" alt="" />
-            <img src="share_img/more_big.png" alt=""
-          /></span>
+    <section id="main_bar_playlist">
+       <div id="playlist_top">
+        <div id="playlist_img">
+          <img src="share_img/playlist.png" alt="" >
         </div>
+        <div id="playlist_tag">
+          <p >PLAYLIST</p>
+          <h1>Pop Right Now</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</p>
+          <div class="spotify">
+            <h4>Spotify</h4>
+            <img src="share_img/Ellipse 8.svg" alt="">
+            <p>860,305 likes</p>
+            <img src="share_img/Ellipse 8.svg" alt="">
+            <p>100 songs, 5 hr 5 min</p>
+          </div>
+
+        </div>
+      </div>
+          <div id="playlist_bottom">
+            <div>
+            <img src="share_img/thumb_play.png" alt="" />
+            <img src="share_img/heart playlist.svg" alt="" />
+            <img src="share_img/more_big.png" alt=""/>
+          </div>
+        
+        <div id="tablediv">
         <table id="playlist_table">
           <tr>
-            <th>#</th>
-            <th>TITLE</th>
-            <th>ALBUM</th>
-            <th>DATE ADDED</th>
-            <th><img src="share_img/icons8-clock.svg" alt="" /></th>
+            <th class="table_th">#</th>
+            <th class="table_th">TITLE</th>
+            <th class="table_th">ALBUM</th>
+            <th class="table_th">DATE ADDED</th>
+            <th class="table_th"><img src="share_img/icons8-clock.svg" alt="" /></th>
           </tr>
           <tr>
             <td>1</td>
@@ -124,6 +121,60 @@
           </tr>
           <tr>
             <td>1</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
+            </td>
+            <td>Future Nostalgia (The Moonlight Edition)</td>
+            <td>일 전</td>
+            <td>2:45 <img src="share_img/more_big.png" alt="" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
             <td>
               <img src="share_img/tablepic1.svg" alt="" />We’re Good Dua Lipa
             </td>
@@ -133,11 +184,14 @@
           </tr>
         </table>
       </div>
-    </section>
-    <footer>
-      <div id="audio">
-        <audio src="" controls style="width: 90vw"></audio>
       </div>
+    </section>
+    
+      </div>
+      <footer id="player">
+       
+          <audio src="" controls style="width: 90vw"></audio>
     </footer>
+  </div>
   </body>
 </html>
