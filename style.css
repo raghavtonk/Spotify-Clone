@@ -16,14 +16,25 @@
   height: 90vh;
 }
 #home_navbar {
-  position: sticky;
+height: auto;
   background: #000;
   flex: 1;
-
+  /* height: 1115.885px; */
   padding-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+#home_navbar2 {
+
+  background: #000;
+  flex: 1;
+  height: 1115.885px;
+  padding-left: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #album_img {
   width: 230px;
@@ -65,7 +76,7 @@
 
 #main_bar {
   flex: 5;
-  
+  height: 1115.885px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -301,4 +312,82 @@ text-align: center;
 #tablediv>table{
 
   width: 75vw;
+}
+
+#burger_menu{
+  display: none;
+}
+#footer2{
+  display: none;
+  
+}
+#uperbutton_playlist{
+  display: none ;
+}
+@media screen and (max-width: 700px) {
+  #burger_menu{
+    display: inline-block;
+    background: #000;
+    border-radius:20%;
+  }
+  #home_navbar{
+    display: none;
+  }
+  #home_navbar2 {
+    display: none;
+  }
+  #player{
+    display: none;
+  }
+  #footer2{
+    display: flex;
+    width: 100vw;
+  height: 10vh;
+  position:fixed;
+  bottom:0px;
+  background: #181818;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  #leftbar > div > strong {
+    display: flex;
+    margin-top: 20px;
+  }
+  .image {
+    width: 21.589px;
+    height: 24px;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  #play{
+    margin: 10px;
+  }
+  #main_page2{
+    width: 100vw;
+
+  }
+  #main_bar_playlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #playlist_img{
+    display: none;
+  }
+  #playlist_top{
+  padding-top: 0px;
+  margin-top: 10px;
+  flex-direction: column;
+   }
+   #uperbutton_playlist{
+    display: flex ;
+    flex-direction: row;
+    /* width: 500px; */
+   justify-content: space-between;
+   margin-bottom: 20px;
+  }
+  #playlist_bottom{
+    height: auto;
+  }
 }
