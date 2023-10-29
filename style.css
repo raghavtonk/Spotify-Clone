@@ -14,8 +14,10 @@
   display: flex;
   width: 100vw;
   height: 90vh;
+  position: relative;
 }
 #home_navbar {
+ 
 height: auto;
   background: #000;
   flex: 1;
@@ -25,7 +27,7 @@ height: auto;
   flex-direction: column;
   justify-content: space-around;
 }
-#home_navbar2 {
+/* #home_navbar2 {
 
   background: #000;
   flex: 1;
@@ -35,7 +37,7 @@ height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 #album_img {
   width: 230px;
   height: 230px;
@@ -123,7 +125,7 @@ height: auto;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-align: center;
+
   border-radius: 4px;
   background: #303030;
   color: #fff;
@@ -133,6 +135,10 @@ height: auto;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.4px;
+  align-items: center;
+}
+.card1>p{
+  padding-left: 20px;
 }
 .card1 > img {
   width: 100px;
@@ -142,6 +148,8 @@ height: auto;
 .list {
   display: flex;
   flex-wrap: wrap;
+  text-align: justify;
+  align-items: center;
 }
 .list2 {
   display: flex;
@@ -209,7 +217,9 @@ height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
+
 
 #leftbar {
   display: flex;
@@ -227,9 +237,13 @@ height: auto;
 }
 #midbar {
   display: flex;
-text-align: center;
+  align-items: center;
   flex-direction: column;
   justify-content:center;
+}
+.icon>img{
+  align-items: center;
+  height: 20%;
 }
 .playertime{
   display: flex;
